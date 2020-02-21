@@ -1,0 +1,167 @@
+// FORM
+.form-group{
+    margin-bottom: 1rem;
+}
+
+// INPUT
+.mdc-text-field{
+    width: 100%;
+    // margin-bottom: 1rem;
+    
+   /* &:not(.mdc-text-field--textarea).mdc-text-field--no-label{
+        height: 40px;
+    }*/
+    &:not(.mdc-text-field--disabled){
+       /* background: #ffffff;*/
+        background: transparent;
+        .mdc-floating-label {
+            color: $color-default;
+        }
+        &:hover{
+            /*background: #ffffff;*/
+            background: transparent;
+        }
+        &:before{
+            opacity: 0;
+        }
+        &.white-field{
+            .mdc-floating-label,
+            .mdc-text-field__input,
+            .mdc-floating-label{
+                color: #ffffff;
+            }
+            .mdc-notched-outline__notch,
+            .mdc-notched-outline__leading,
+            .mdc-notched-outline__trailing{
+                border-color: #ffffff !important;
+            }
+            &:not(.mdc-text-field--textarea),
+            &:not(.mdc-text-field--textarea):not(.mdc-text-field--outlined){
+                .mdc-text-field__input{
+                    border-color: #FFF;
+                    caret-color:#FFF;
+                }
+            }
+        }
+        &:not(.mdc-text-field--outlined):not(.mdc-text-field--textarea){
+            
+            &.mdc-text-field--focused{
+                .mdc-text-field__input{
+                    border-color:$color-border-active;
+                }
+            }
+            .mdc-text-field__input{
+                border: 1px solid $color-border;
+                border-radius: 4px;
+                background-color: #FFF;
+                &:hover{
+                    border-color:$color-border-active;
+                }
+            }
+        }
+        
+
+        // TEXTAREA
+        &.mdc-text-field--textarea {
+            .mdc-notched-outline__leading, 
+            .mdc-notched-outline__notch, 
+            .mdc-notched-outline__trailing {
+                border-color:$color-border;
+            }
+
+            &.mdc-text-field--focused{
+                .mdc-notched-outline__leading, 
+                .mdc-notched-outline__notch, 
+                .mdc-notched-outline__trailing{
+                    border-width: 1px;
+                }
+            } 
+            .mdc-text-field__icon:hover,
+            .mdc-text-field__input:hover{
+                &~.mdc-notched-outline{
+                    .mdc-notched-outline__leading, 
+                    .mdc-notched-outline__notch, 
+                    .mdc-notched-outline__trailing{
+                        border-color:$color-border-active;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// SELECT
+.mdc-select{
+    height: 56px;
+    .mdc-select__anchor{
+        width: 100%;
+    }
+    &:not(.mdc-select--disabled) {
+        .mdc-select__selected-text{
+            border: 1px solid;
+            border-radius: 4px;
+            border-color:$color-border;
+            background: #ffffff;
+        }
+
+        .mdc-select__anchor:hover{
+            .mdc-select__selected-text{
+                border-color:$color-border-active;
+            }
+            &::before{
+                opacity: 0;
+            }
+        }
+        &.mdc-select--focused {
+            .mdc-floating-label{
+                color: $color-default !important;
+            }
+            .mdc-select__dropdown-icon{
+                background: url("data:image/svg+xml,%3Csvg%20width%3D%2210px%22%20height%3D%225px%22%20viewBox%3D%227%2010%2010%205%22%20version%3D%221.1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%3E%0A%20%20%20%20%3Cpolygon%20id%3D%22Shape%22%20stroke%3D%22none%22%20fill%3D%22%23000%22%20fill-rule%3D%22evenodd%22%20opacity%3D%220.54%22%20points%3D%227%2010%2012%2015%2017%2010%22%3E%3C%2Fpolygon%3E%0A%3C%2Fsvg%3E") no-repeat center;
+            }
+        }
+    }
+    .mdc-select__menu{
+        width: 100%;
+    }
+}
+
+// BOTÕES
+.mdc-button{
+    padding: .375rem 4rem;
+    border:0 none;
+    font-family: 'Open Sans', sans-serif;
+    height: 40px;
+    font-weight: 600;
+
+    &.btn-rounded{
+        border-radius: 25px;
+    }
+
+    &.spacing-normal{
+        padding: .375rem 1rem;
+    }
+
+    &.btn-light{
+        background: $color-highlight;
+        color: #ffffff;
+    }
+
+    &.btn-primary{
+        background: $color-primary-light;
+        color: #ffffff;
+    }
+
+    &.btn-primary-white{
+        border: 1px solid $color-primary-dark;
+        color: $color-primary-dark;
+        background: #ffffff;
+    }
+
+    &.btn-primary-dark{
+        background: $color-primary-dark;
+        color: #ffffff;
+    }
+
+
+}

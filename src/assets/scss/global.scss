@@ -1,0 +1,41 @@
+// https://xd.adobe.com/view/87b8da95-39b2-4d1c-4cba-d0d43d682e67-f189/
+// >IE 11 
+
+// IMPORTS
+@import 'reset', 'spacing', 'variables', 'mixins', 'form', 'footer', 'header', 'nav', 'main', 'card', 'stepper', 'table';
+
+// FONTS
+/*@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+*/
+// FONTS
+@include addFont('lato-light', 'lato-light');
+@include addFont('lato-regular', 'lato-regular');
+@include addFont('lato-semibold', 'lato-semibold');
+@include addFont('lato-bold', 'lato-bold');
+ 
+/*MAIN STRUCT*/   
+html{        
+    height: 100%;    
+    font-size: 14px;
+} 
+body{
+    min-height: 100%;
+    font-family: 'lato-regular', sans-serif;
+    position: relative;  
+    font-weight: 300;     
+    margin: 0; 
+}                   
+    
+.container-main{
+    display: flex; 
+    min-height: 100vh;  
+    
+    @include md-down{
+        flex-direction: column;    
+    } 
+}
+                    
+
+                                                                              
+
+            

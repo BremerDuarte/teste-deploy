@@ -1,0 +1,13 @@
+// RESET
+*:focus,
+*.focus {
+	outline: 0 transparent !important;
+}
+
+:root{
+    --mdc-theme-primary: $color-primary;
+}
+
+h1{
+    margin: 0;
+}

@@ -1,0 +1,14 @@
+footer{
+    box-shadow: 0px 0px 6px rgba(0,0,0,.05);
+    background: $color-dark-blue;
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: $footer-size;
+   /* // position: absolute;
+    // left: 0;
+    // bottom: 0;
+    // right: 0;*/
+}
+

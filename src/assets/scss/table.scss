@@ -1,0 +1,24 @@
+.mdc-data-table{
+    width: 100%;
+    border-radius: 0;
+    /*border-width: 0;*/
+    @include fontSize(12);
+    .mdc-data-table__header-cell{
+        background: #F5F6FA;
+        height: 45px;
+        font-weight: 600;
+        color: $color-dark;
+    }
+    .mdc-data-table__row{
+        border-top-color:#F5F6FA;
+    }
+    .mdc-data-table__cell{
+        line-height: 3rem;
+        padding: 10px;
+    }
+    .title{
+        font-weight: 600;
+        display: block;
+    }
+}    
+

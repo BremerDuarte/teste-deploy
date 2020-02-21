@@ -1,0 +1,108 @@
+main{
+    background: $color-gray;
+    flex: 1 1 auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+    >div{
+        flex: 1 1 auto;
+        text-align: center;
+        padding: $gutter*2;
+        @include md-down{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        >*{
+            max-width: 100%;
+        }
+    }
+
+    .container-index{
+        display: flex;
+        height: 100%;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        @include fontSize(24);
+        font-weight: 600;
+        color: #9B9898;
+        max-width: 800px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .container-desc{
+        background: $color-highlight;
+        color: #FFF;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .container-total {
+        background: $color-dark-blue; 
+        color: #FFF;
+        width: 100%;
+        text-align: left;
+        padding-left: $gutter;
+        /*line-height: 3rem;*/
+        padding: 10px;
+        .title-box {
+            color: #FFF;
+        }
+        input {
+            border: 1px solid #EEE;
+            border-radius: 4px;
+            background-color: #FFF;
+        }
+    }
+
+    .container-button{
+        text-align: right;
+    }
+
+    .alert {
+        text-align: left;
+        font-weight: bold;
+        @include fontSize(15);
+    }
+
+    .title,
+    .page-title{
+        display: flex;
+        color: $color-primary;
+        justify-content: space-between;
+        margin-bottom: 4rem;
+        @include xl-down{
+            flex-direction: column;
+        }
+        h2{
+            color: $color-primary;
+            font-weight:600;
+            margin: 0;
+        }
+    }
+
+    .title{
+        text-align: center;
+        padding-top: $gutter*5;
+        h2{
+            @include fontSize(29);
+        }
+    }
+
+    .page-title{
+        text-align: left;
+        h2{
+            @include fontSize(24);
+        }
+    }
+
+    .sub-title{
+        @include fontSize(17);
+        text-align: center;
+    }
+
+} 
